@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_gravity="center_vertical"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/result_text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/dice_image1"
+        android:layout_width="138dp"
+        android:layout_height="114dp"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp"
-        android:text="Hello World!" />
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"/>
 
-    <TextView
-        android:id="@+id/result_text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/dice_image2"
+        android:layout_width="138dp"
+        android:layout_height="114dp"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp" />
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"/>
 
-    <TextView
-        android:id="@+id/result_text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/dice_image3"
+        android:layout_width="138dp"
+        android:layout_height="114dp"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp" />
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"/>
 
     <Button
         android:id="@+id/roll_button"
@@ -37,38 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        tools:context=".MainActivity">
-
-        <TextView
-            android:id="@+id/display_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginLeft="110dp"
-            android:text="Total : "
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/result_text4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textSize="30sp"/>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/count_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/count_label" />
 
 </LinearLayout>
 
